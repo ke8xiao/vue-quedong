@@ -1,0 +1,66 @@
+*{
+  padding: 0;    
+  margin:0;    
+}
+
+html,body{
+height:100%;
+}
+.content-box{
+  position: absolute;
+    left: 110px;
+    right: 0;
+    top: 52px;
+    bottom: 0;
+    padding-bottom: 30px;
+    background: #f0f0f0;
+    overflow-y: scroll;
+}
+.content {
+  width: auto;
+  height: 100%;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+.nextStep{
+  background: linear-gradient(270deg, #AF855C 0%, #CEA786 100%);
+  color:#FFFFFF;
+}
+.btn button{
+  position: absolute;
+  bottom: 40px;
+}
+
+
+/* element UI中的卡片样式去除内边距 */
+.left .el-card__body {
+  padding:0
+}
+.el-tree-node__content{
+  height:40px;
+}
+.el-table .cell {
+  white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
+/* 去掉el-tabs底部的下划线 */
+.el-tabs__nav-wrap::after {
+  position: static !important;
+}
+/* 选项栏被选中时底部下划线的颜色 */
+.el-tabs__active-bar {
+  background-color: #f49b4d;
+}
+.el-tabs__item {
+  font-size:16px;
+}
